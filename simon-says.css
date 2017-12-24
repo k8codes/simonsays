@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico');
+
+body {
+  background-color: #1a1a1d;
+  margin: 0 auto;
+}
+/*directions/faq*/
+#howToPlay, #faq {
+  font-family: 'Century Gothic', sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+/*styling for questions on faq*/
+.info {
+  color: #67676b;
+}
+/*styling so email address is prominent*/
+#email {
+  color:red;
+}
+/*return to game button*/
+#return {
+  margin-top: 20px;
+}
+/*hides divs/elements when needed*/
+.hide {
+  visibility: hidden;
+}
+/*title/heading*/
+#main-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 4.5em;
+  color: #fdf5e6;
+  margin: 0 auto;
+}
+/*sub heading; negative margin for overlay effect*/
+#sub {
+  color: #8b7d6b;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1em;
+}
+/*initial message indicating how to begin*/
+#beginMsg {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1.5em;
+  background-color: #fffaf0;
+  color: #1a1a1d;
+
+}
+/*area where score is shown*/
+#score {
+  font-family: 'VT323', monospace;
+  background-color: #000;
+  color: #ea1717;
+  font-size: 4em;
+  width: 90px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+/*styling for start button and strict button*/
+#start, #strict {
+  margin-top: 10px;
+  width: 80px;
+  height: 25px;
+  font-size: 1em;
+  border: 1px #1a1a1d solid;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: #37373d;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
+
+#start:hover, #strict:hover {
+  background-color: #000;
+  color: #fff;
+}
+/*spacing and sizing for columns*/
+#row {
+  margin: 0 auto;
+  column-count: 4;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-gap: 0px;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-width: 100px;
+  -webkit-column-width: 100px;
+  -moz-column-width: 100px;
+  max-width: 100%;
+  background-color: #37373d;
+  border-radius: 12px;
+  box-shadow: 10px 10px 10px #000;
+  padding: 20px;
+  max-width: 80%;
+}
+/*specific styling of circles*/
+.spots {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 256px;
+}
+/*each circles individual color*/
+#one {
+  background-color: #f44245;
+}
+
+#two {
+  background-color: #42f4ee;
+}
+
+#three {
+  background-color: #86f486;
+}
+
+#four {
+  background-color: #efe881;
+}
+/*change when .clicked is applied to circle*/
+.clicked {
+  opacity: 0.2;
+}
+
+#win {
+  background-color: #1a1a1d;
+  color: #f44271;
+  font-size: 4em;
+}
+
+#lose {
+  background-color: #1a1a1d;
+  color: #ddb4ed;
+  font-size: 4em;
+}
+/*indicator that strict has been turned on*/
+#strictOn {
+  color: red;
+}
+/*sizing for smaller screens*/
+@media only screen and (max-width: 500px) {
+  .spots {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #header {
+    margin-bottom: 30px;
+  }
+}
+
+#restart, #endGame {
+  font-family: 'Century Gothic', sans-serif;
+  margin-top: 10px;
+}
+
+#home {
+  color: white;
+  margin: 0 auto;
+}
