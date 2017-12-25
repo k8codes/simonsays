@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Simon Says</title></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-	awesome.min.css"/>
+    <!--bootstrap-->
+  <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+    <!--my css-->
+  <link rel="stylesheet"
+   type="text/css"
+    href="other.css">
+
+<body>
+  <!--faq/how to play-->
+ <div class="text-center hide" id="faq">
+   <h1>FAQ</h1>
+   <div class="btn btn-primary" id="return">return to game</div>
+   <h2 class="info">How do I begin playing?</h2>
+     <p>Press the start button to begin game.</p>
+   <h2 class="info">How the heck do I play this game?!</h2>
+     <p>When you press start, the computer flashes one of the four circles, and plays the sound corresponding to that circle. You must click the same circle to proceed to the next round. Every time you get it correctly, the computer will play the same series of flashes again, plus a new additional one. Once the computer reaches twenty flashes, and you play them all correctly, you win the game.</p>
+   <h2 class="info">Do I have to  use the mouse to play?</h2>
+     <p>Nope. You can use the A, S, D, and F keys. A is the first circle, S is the second, D is the third, and F is the fourth.</p>
+   <h2 class="info">What is the strict button for?</h2>
+     <p>The default mode of the game allows you to get presses wrong. When you do, it will alert you, then replay the series for you to try again. When you play STRICT mode, you cannot get any wrong. If you do, you lose.<p>
+   <h2 class="info">Are the numbers my score?</h2>
+     <p>Pretty much. The numbers indicate how many flashes are currently in play for that round, which is why you start off with 1.</p>
+   <h2 class="info">There's an issue with the game/it's not working properly.</h2>
+     <p>Send an email to <span id="email">k8codes@gmail.com</span> to let me know!</p>
+</div>
+
+<!--jQuery/bootstrap-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-	KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" 	integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" 	crossorigin="anonymous"></script>
+<script src="simon-says.js" type="text/javascript"></script>
+
+</body>
+</html>
