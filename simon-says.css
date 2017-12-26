@@ -128,15 +128,18 @@ body {
 }
 
 #win {
+  font-family: 'Tahoma', sans-serif;
   background-color: #1a1a1d;
   color: #f44271;
   font-size: 4em;
 }
 
-#lose {
+#lost {
+  font-family: 'Tahoma', sans-serif;
   background-color: #1a1a1d;
   color: #ddb4ed;
   font-size: 4em;
+  margin-top: 20px;
 }
 /*indicator that strict has been turned on*/
 #strictOn {
@@ -163,4 +166,15 @@ body {
 #home {
   color: white;
   margin: 0 auto;
+}
+
+#return {
+  cursor: pointer;
+}
+
+#play-again, #end-game {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Tahoma', sans-serif;
+  box-shadow: 2px 2px 1px grey;
 }

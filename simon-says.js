@@ -102,17 +102,9 @@ $(document).ready(function() {
     disable = false;
   }
 
-  function showVictory() {
-     $('#game').fadeOut();
-     $('#win').fadeIn().removeClass('hide');
-    setTimeout(function() {$('#game').fadeIn(); $('#win').addClass('hide')}, 2000);
-  }
+  const showVictory = () => window.location.href = 'win.html';
+  const showLoss = () => window.location.href = 'lose.html';
 
-  function showLoss() {
-      $('#game').fadeOut();
-      $('#lose').fadeIn().removeClass('hide');
-     setTimeout(function() {$('#game').fadeIn(); $('#lose').addClass('hide')}, 2000);
-  }
  //stops circles from flashing
   function removeFlashes () {
     audio.pause();
@@ -239,9 +231,10 @@ $(document).ready(function() {
     window.location.href = 'help.html';
   })
 
-  $('#return').click(function() {
+  $('.return').click(function() {
     window.location.href = 'index.html';
   })
+
 
   $('#endGame').click(function() {
     resetGame();
@@ -252,10 +245,11 @@ $(document).ready(function() {
                           $('#game').fadeIn().removeClass('hide')}, 2000);
   })
 
+
   $('#restart').click(function() {
     removeFlashes();
     backToBeginning();
-    setTimeout(function() {theGame()}, 300);
+    setTimeout(() => {theGame()}, 300);
   })
 
   $('#strict').click(function() {
