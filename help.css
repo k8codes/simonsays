@@ -1,0 +1,12 @@
+body {
+  font-family: 'Century Gothic', sans-serif;
+  color: #000;
+  padding: 30px;
+}
+
+#email {
+  color: red;
+}
+#return {
+  cursor: pointer;
+}

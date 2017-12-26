@@ -6,23 +6,12 @@ body {
   margin: 0 auto;
 }
 /*directions/faq*/
-#howToPlay, #faq {
+#howToPlay {
   font-family: 'Century Gothic', sans-serif;
   color: #fff;
   cursor: pointer;
 }
-/*styling for questions on faq*/
-.info {
-  color: #67676b;
-}
-/*styling so email address is prominent*/
-#email {
-  color:red;
-}
-/*return to game button*/
-#return {
-  margin-top: 20px;
-}
+
 /*hides divs/elements when needed*/
 .hide {
   visibility: hidden;
@@ -57,7 +46,7 @@ body {
   width: 90px;
   height: 80px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 10px;
   border-radius: 5px;
   text-align: center;
 }
@@ -166,10 +155,6 @@ body {
 #home {
   color: white;
   margin: 0 auto;
-}
-
-#return {
-  cursor: pointer;
 }
 
 #play-again, #end-game {

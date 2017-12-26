@@ -231,20 +231,15 @@ $(document).ready(function() {
     window.location.href = 'help.html';
   })
 
+  //return button on help page
   $('.return').click(function() {
     window.location.href = 'index.html';
   })
 
-
   $('#endGame').click(function() {
     resetGame();
     removeFlashes();
-    $('#game').addClass('hide');
-    $('#end').fadeIn().removeClass('hide');
-    setTimeout(function() {$('#end').fadeOut().addClass('hide');
-                          $('#game').fadeIn().removeClass('hide')}, 2000);
   })
-
 
   $('#restart').click(function() {
     removeFlashes();
